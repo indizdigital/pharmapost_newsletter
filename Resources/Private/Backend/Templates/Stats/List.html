@@ -1,0 +1,55 @@
+{namespace phi=Phi\PhiNewsletter\ViewHelpers}
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1>Statistik</h1>
+
+<div class="downloadall">
+<strong><f:link.action action="csv"><f:translate key="tx_phinewsletter_domain_model_stats.getcompletecsv" /></f:link.action></strong>
+</div>
+
+  <div class="panel panel-space panel-default recordlist">
+  	<div class="panel-heading">
+      <a href="#">Statistik pro Versand (Edition)</a>
+    </div>
+    <div>
+      <div class="table-fit">
+          <table class="table table-striped table-hover">
+            <thead>
+              <th class="col-title"><f:translate key="tx_phinewsletter_domain_model_stats.edition" /> #</th>
+              <th><f:translate key="tx_phinewsletter_domain_model_stats.openingrate" /></th>
+              <th><f:translate key="tx_phinewsletter_domain_model_stats.getcsv" /></th>
+            </thead>
+              <tbody>
+            <f:for each="{stats}" as="stat">
+                <tr class="panel-space">
+                  <td>
+                    <f:link.action action="show" arguments="{edition : stat.edition}"> {stat.edition} </f:link.action>
+                  </td>
+                  <td>
+                    {stat.openingrate}
+                  </td>
+                  <td>
+                    <f:link.action action="csv" arguments="{edition:stat.edition}">
+                    <f:translate key="tx_phinewsletter_domain_model_stats.getcsv" /></f:link.action>
+                  </td>
+                </tr>
+          	</f:for>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+
+</f:section>

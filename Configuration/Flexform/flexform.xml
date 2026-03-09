@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <sheets>
+	<main>
+	  <ROOT>
+		<TCEforms>
+		  <sheetTitle>Verhalten</sheetTitle>
+		</TCEforms>
+		<type>array</type>
+		<el>
+		  <switchableControllerActions>
+			<TCEforms>
+			  <label>Standardaktion des Plugins</label>
+			  <config>
+				<type>select</type>
+				<items>
+				   <numIndex index="0">
+					 <numIndex index="0">User Subscription</numIndex>
+					 <numIndex index="1">User->new;User->create;User->activate</numIndex>
+				   </numIndex>
+				   <numIndex index="1">
+					 <numIndex index="0">Show Newsletter Archive</numIndex>
+					 <numIndex index="1">Emails->archived</numIndex>
+				   </numIndex>
+				   <numIndex index="2">
+					 <numIndex index="0">Send Newsletter Action</numIndex>
+					 <numIndex index="1">Emails->sendall</numIndex>
+				   </numIndex>
+				   <numIndex index="3">
+					 <numIndex index="0">Status Newsletter (Unsubscribe)</numIndex>
+					 <numIndex index="1">User->status;User->activate</numIndex>
+				   </numIndex>
+				 </items>
+			  </config>
+			</TCEforms>
+		  </switchableControllerActions>
+		  <settings.flexform.displayLimit>
+			<TCEforms>
+			  <label>Display Limit</label>
+			  <config>
+				<type>input</type>
+     			<size>30</size>
+			  </config>
+			</TCEforms>
+		  </settings.flexform.displayLimit>
+		</el>
+	  </ROOT>
+	</main>
+  </sheets>
+</T3DataStructure>

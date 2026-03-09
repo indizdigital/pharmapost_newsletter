@@ -1,0 +1,59 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1>Versendete Newsletter</h1>
+
+<f:flashMessages />
+<f:form action="list"  name="Emails">
+  <div class="panel panel-space panel-default recordlist">
+  	<div class="panel-heading">
+      <a href="#">Empfänger</a>
+    </div>
+    <div>
+      <div class="table-fit">
+        <table class="table table-striped table-hover">
+          <thead>
+        		<th><f:translate key="tx_phinewsletter_domain_model_emails.edition" /></th>
+        		<th class="col-title"><f:translate key="tx_phinewsletter_domain_model_config.subject" /></th>
+        		<th><f:translate key="tx_phinewsletter_domain_model_emails.numberofemails" /></th>
+        		<th><f:translate key="tx_phinewsletter_domain_model_emails.senttime" /></th>
+          </thead>
+          <tbody>
+          	<f:for each="{emails}" as="email">
+              	<tr class="panel-space">
+            			<td class="editioncol"><f:link.action action="show" arguments="{config : email.config}"> {email.config}</f:link.action></td>
+            			<td><f:link.action action="show" arguments="{config : email.config}"> {email.subject0}</f:link.action></td>
+            			<td><f:link.action action="show" arguments="{config : email.config}"> {email.amount}</f:link.action></td>
+            			<td><f:link.action action="show" arguments="{config : email.config}">
+                        	<f:if condition="{email.senttime}">
+                               <f:then>
+                                   <f:if condition="{email.senttime} == '1'">
+                                       <f:then><f:translate key="tx_phinewsletter_domain_model_emails.emailerror" /></f:then>
+                                       <f:else><f:format.date format="d.m.Y">{email.senttime}</f:format.date></f:else>
+                                   </f:if>
+                               </f:then>
+                               <f:else>-</f:else>
+                            </f:if>
+                        	</f:link.action>
+                        </td>
+                  </tr>
+          	</f:for>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</f:form>
+</f:section>

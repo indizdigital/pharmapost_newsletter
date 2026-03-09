@@ -1,0 +1,17 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<div class="phi-newsletter statusmessage">
+    <div class="confirmation">
+       <f:if condition="{sent}">
+              <f:then>
+                <f:translate key="tx_phinewsletter_domain_model_user.usersaved" />
+              </f:then>
+              <f:else>
+                <f:translate key="tx_phinewsletter_domain_model_user.userCouldNotBeSaved" />
+              </f:else>
+      </f:if>
+	</div>
+</div>
+</f:section>

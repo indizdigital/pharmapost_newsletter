@@ -1,0 +1,97 @@
+#DB Mapping
+config.tx_extbase{
+    persistence{
+        classes{
+
+            TYPO3\CMS\Extbase\Domain\Model\FrontendUser {
+                subclasses {
+                    0 = Phi\PhiNewsletter\Domain\Model\User
+                }
+            }
+            Phi\PhiNewsletter\Domain\Model\User {
+                mapping {
+            		recordType = 0
+                    tableName = fe_users
+                }
+            }
+
+    	}
+    }
+}
+
+
+ # Module configuration
+module.tx_phinewsletter_web_phinewsletterphinewsletter {
+	persistence {
+		storagePid = {$module.tx_phinewsletter_phinewsletter.persistence.storagePid}
+	}
+	view {
+		templateRootPaths.0 = {$module.tx_phinewsletter_phinewsletter.view.templateRootPath}
+		partialRootPaths.0 = {$module.tx_phinewsletter_phinewsletter.view.partialRootPath}
+		layoutRootPaths.0 = {$module.tx_phinewsletter_phinewsletter.view.layoutRootPath}
+	}
+
+	settings{
+		storagePid = 121
+		pidForImport = 251
+		indices {
+			firstName = 1
+			lastName = 2
+			address = 3
+			zip = 4
+			city = 5
+			company = 6
+			email = 7
+			title = 8
+			language = 9
+			languageMapping.de = 0
+			languageMapping.fr = 1
+			languageMapping.it = 2
+		}
+		csvDelimiter = ;
+	}
+}
+plugin.tx_phinewsletter {
+	view {
+		templateRootPaths.0 = {$plugin.tx_phinewsletter.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_phinewsletter.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_phinewsletter.view.layoutRootPath}
+	}
+	features{
+		requireCHashArgumentForActionArguments = 0
+	}
+	persistence {
+		storagePid = {$plugin.tx_phinewsletter.persistence.storagePid}
+		classes  {
+
+            		Phi\PhiNewsletter\Domain\Model\User {
+                		mapping {
+                    		tableName = fe_users
+                		}
+            		}
+
+    		}
+	}
+	settings{
+		emailsendername = Indiz Digital GmbH
+		emailsender = tech@indiz.digital
+		base = {$BASEURL}
+		newslettergroup_uid = 3
+		not_activated_uid = 4
+		useDoubleOptIn = 1
+		amountOfSentEmailsToRecognizeAsNonTestMail = 20
+		statsStoragePid = 121
+		statusPage = 248
+		newsletterGroupsPid = 121
+		smtp{
+			transport_smtp_server = SERVER
+			transport_smtp_encrypt = tls
+			transport_smtp_username = USERNAME
+			transport_smtp_password = ***
+			defaultMailFromAddress = tech@indiz.digital
+			defaultMailFromName = Indiz Digital GmbH
+			defaultMailReplyToAddress = tech@indiz.digital
+			defaultMailReplyToName = Indiz Digital GmbH
+		}
+	}
+}

@@ -1,0 +1,48 @@
+<f:layout name="Empty" />
+
+<f:section name="main">
+<div class="dashboardRow clearfix">
+	<div class="dashboardItem dashboardItem-newsletter dashboardItem-col6 bgWhite">
+		<div class="dashboardItem-col2">
+			<div class="dashboardNewsletterLogo">
+				<f:image src="fileadmin/templates/iamedis/img/logo.svg" />
+			</div>
+		</div>
+		<div class="dashboardItem-col4 bgLightgrey" style="padding:1% 2.5%">
+			<h2><f:translate key='tx_phinewsletter_domain_model_user.subscribtion_title' /></h2>
+			<div class="typo3-messages">
+				<f:if condition="{error}">
+					<f:then>
+						<div class="alert alert-danger">
+							<div class="message">
+								<div><span class="icon iconDanger"></span><strong><f:format.raw><f:translate key='tx_phinewsletter_domain_model_user.confirmFailed' /></f:format.raw></strong></div>
+							</div>
+						</div>
+					</f:then>
+					<f:else>
+						<div class="alert alert-success">
+							<div class="message">
+								<div><span class="icon iconSuccess"></span><strong><f:format.raw><f:translate key='tx_phinewsletter_domain_model_user.confirmActivation' /></f:format.raw></strong></div>
+							</div>
+						</div>
+					</f:else>
+				</f:if>
+			</div>
+			<!--div class="typo3-messages">
+				<f:if condition="{error}">
+					<f:then>
+				    <div class="failed">
+		         <f:format.raw><f:translate key='tx_phinewsletter_domain_model_user.confirmFailed' /></f:format.raw>
+				    </div>
+					</f:then>
+					<f:else>
+					    <div class="confirmed">
+			         <f:format.raw><f:translate key='tx_phinewsletter_domain_model_user.confirmActivation' /></f:format.raw>
+					    </div>
+					</f:else>
+				</f:if>
+			</div-->
+		</div>
+	</div>
+</div>
+</f:section>

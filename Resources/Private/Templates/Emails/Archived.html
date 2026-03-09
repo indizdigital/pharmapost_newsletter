@@ -1,0 +1,21 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<div class="phi-newsletter-archive {hide}">
+	<h2 class="title">
+       	<f:translate key='tx_phinewsletter_domain_model_emails.archive' />
+    </h2>
+    <ul class="archive-list">
+       <f:for each="{archivelist}" as="archiveItem">
+          <li class="edition{archiveItem.edition}"><a href="/uploads/phi_newsletter/webview/newsletter-edition{archiveItem.edition}-{languageKey}.html" target="_blank"><f:translate key="tx_phinewsletter_domain_model_emails.archivetitle" /> <f:format.date format="d.m.Y">@{archiveItem.senttime}</f:format.date></a></li>
+      </f:for>
+	</ul>
+</div>
+
+</div>
+</div>
+</article>
+<article>
+<div><div>
+</f:section>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" target-language="it" datatype="plaintext" original="messages" date="2015-08-04T13:50:13Z" product-name="phi_newsletter">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_phinewsletter_domain_model_emails.archive">
+				<target><![CDATA[Archive du Newsletter]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.tothearchive">
+				<target><![CDATA[À l'archive]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.archivetitle">
+				<target><![CDATA[Edition de ]]></target>
+			</trans-unit>
+
+			<trans-unit id="tx_phinewsletter_domain_model_user.newsletter">
+				<target><![CDATA[Newsletter]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmTitle">
+				<target><![CDATA[Confirmation d’inscription]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.newslettersubscribe">
+				<target><![CDATA[Inscription pour la Newsletter]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.newslettersubscribe_text">
+				<target><![CDATA[Veuillez entrer votre adresse électronique pour vous inscrire à notre Newsletter:  ]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.email">
+				<target><![CDATA[Votre adresse e-mail]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.save">
+				<target><![CDATA[S’inscrire]]></target>
+			</trans-unit>
+
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmSubject">
+				<target>Veuillez confirmer votre inscription.</target>
+			</trans-unit>
+
+			<trans-unit id="tx_phinewsletter_domain_model_user.usersaved">
+				<target><![CDATA[Nous vous envoyons un email pour confirmer votre inscription.]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.preconfirmtext">
+				<target><![CDATA[Vous vous êtes inscrit pour l'Newsletter.<br/><br/>Veuillez confirmer votre adresse électronique en suivant le lien ci-dessous.]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmlink">
+				<target><![CDATA[Activer votre adresse électronique]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.postconfirmtext">
+				<target><![CDATA[Merci beaucoup.<br/><br/>Votre team]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmActivation">
+				<target><![CDATA[Votre adresse est maintenant activée!]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmActivationSubject">
+				<target><![CDATA[Nous avons ajouté votre adresse électronique à notre liste de distribution.]]></target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.subscribtion_title">
+				<target>Toujours à la page?</target>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.subscribtion_subtitle">
+				<target>Inscrivez-vous à la newsletter d’Amedis.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

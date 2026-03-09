@@ -1,0 +1,86 @@
+<div class="prop-input">
+    <label for="subject">
+        <f:translate key="tx_phinewsletter_domain_model_config.subject" />
+    </label>
+        <f:form.textfield property="subject" />
+
+    <label for="namefrom">
+        <f:translate key="tx_phinewsletter_domain_model_config.namefrom" />
+    </label>
+        <f:form.textfield property="namefrom" />
+
+    <label for="emailfrom">
+        <f:translate key="tx_phinewsletter_domain_model_config.emailfrom" />
+    </label>
+        <f:form.textfield property="emailfrom" />
+
+    <label for="replytoname">
+        <f:translate key="tx_phinewsletter_domain_model_config.replytoname" />
+    </label>
+        <f:form.textfield property="replytoname" />
+
+    <label for="replytoemail">
+        <f:translate key="tx_phinewsletter_domain_model_config.replytoemail" />
+    </label>
+        <f:form.textfield property="replytoemail" />
+
+    <label for="statuspageid">
+        <f:translate key="tx_phinewsletter_domain_model_config.statuspageid" />
+    </label>
+        <f:form.textfield property="statuspageid" />
+
+    <label for="filestorage">
+        <f:translate key="tx_phinewsletter_domain_model_config.filestorage" />
+    </label>
+        <f:form.textfield property="filestorage" />
+
+    <label for="url">
+        <f:translate key="tx_phinewsletter_domain_model_config.url" />
+    </label>
+        <f:form.textfield property="url" />
+            <label for="selected">
+                <f:translate key="tx_phinewsletter_domain_model_config.selected" />
+            </label>
+                <f:form.checkbox property="selected" value="1" /><br />
+</div>
+<script src="sysext/rte_ckeditor/Resources/Public/JavaScript/Contrib/ckeditor.js"></script>
+<div class="prop-prefix">
+    <label for="prefix0">
+        <f:translate key="tx_phinewsletter_domain_model_config.prefix0" />
+    </label>
+        <f:form.textarea property="prefix0" rows="3" id="prefixde" />
+        <script>
+          CKEDITOR.replace("prefixde", {"customConfig":"","contentsCss":["\/typo3\/sysext\/rte_ckeditor\/Resources\/Public\/Css\/contents.css","..\/fileadmin\/templates\/amedis\/ext\/rte_ckeditor\/RteAmedis.css"],"defaultContentLanguage":"en","defaultLanguage":"en","extraAllowedContent":["span"],"height":300,"width":"auto","toolbar":"Basic","uiColor":"#F8F8F8","removeDialogTabs":"image:advanced;link:advanced","entities_latin":false,"entities":false,"stylesSet":[{"name":"Link List","element":"ul","attributes":{"class":"linkList"}},{"name":"Zitat","element":"p","attributes":{"class":"quote"}},{"name":"Quelle","element":"p","attributes":{"class":"source"}},{"name":"Blue Text","element":"span","attributes":{"class":"textBlue"}},{"name":"Gr\u00fcner Text","element":"span","attributes":{"class":"textGreen"}},{"name":"Button Blau","element":"a","attributes":{"class":"btn btnBlue"}},{"name":"Button Gr\u00fcn","element":"a","attributes":{"class":"btn btnGreen"}}],"wordcount":{"showParagraphs":true,"showWordCount":true,"showCharCount":true,"countSpacesAsChars":true,"countHTML":false,"countLineBreaks":false,"maxWordCount":-1,"maxCharCount":-1,"pasteWarningDuration":5000},"format_tags":"p;h1;h2;h3;pre;address","toolbarGroups":[{"name":"styles","groups":["styles","format"]},{"name":"basicstyles","groups":["basicstyles"]},{"name":"paragraph","groups":["list","indent","blocks","align"]},{"name":"links","groups":["links"]},{"name":"clipboard","groups":["clipboard","cleanup","undo"]},{"name":"editing","groups":["spellchecker"]},{"name":"insert","groups":["insert"]},{"name":"tools","groups":["table","specialchar","insertcharacters"]},{"name":"document","groups":["mode"]}],"justifyClasses":["text-left","text-center","text-right","text-justify"],"extraPlugins":"justify,find,bidi,selectall,autolink,wordcount,typo3link,showbrokenlinks,quicktable,autolinking,softhyphen","removePlugins":"image","removeButtons":"Anchor,Underline,Strike","language":"de","contentsLanguage":"en","typo3link":{"route":"rteckeditor_wizard_browse_links","routeUrl":"\/typo3\/index.php?route=%2Frte%2Fwizard%2Fbrowselinks&token=04b9c8e51d87e27fd4de5542e79d59b7a21ae343&P%5Btable%5D=tx_phinewsletter_domain_model_config&P%5Buid%5D=NEW5f86e008dd122929468291&P%5BfieldName%5D=prefix0&P%5BrecordType%5D=1&P%5Bpid%5D=68&P%5BrichtextConfigurationName%5D=default"},"softhyphen":{"enableShortcut":true}});
+</script>
+
+    <label for="prefix1">
+        <f:translate key="tx_phinewsletter_domain_model_config.prefix1" />
+    </label>
+        <f:form.textarea property="prefix1" rows="3" />
+
+    <label for="prefix2">
+        <f:translate key="tx_phinewsletter_domain_model_config.prefix2" />
+    </label>
+        <f:form.textarea property="prefix2" rows="3" />
+    <!--label for="image">
+        <f:translate key="tx_phinewsletter_domain_model_config.image" /><br/>
+    </label>
+        <f:if condition="{config.image}">
+        	<f:then>
+            	<f:image src="{config.image.originalResource.publicUrl}" maxWidth="500" /><br/>
+            </f:then>
+            <f:else>
+            </f:else>
+        </f:if>
+        <f:form.upload name="image" /-->
+        <br/>
+    <label for="tosendtime">
+        <f:translate key="tx_phinewsletter_domain_model_config.tosendtime" /><br/>
+    </label>
+        <f:form.textfield property="tosendtime"/><br/>
+            <label for="selected">
+                <f:translate key="tx_phinewsletter_domain_model_config.configuration" />
+            </label>
+                <f:form.textarea property="configuration" rows="5" />
+
+</div>

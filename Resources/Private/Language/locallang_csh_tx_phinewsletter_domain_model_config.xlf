@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2016-01-11T20:51:53Z" product-name="phi_newsletter">
+		<header/>
+		<body>
+			<trans-unit id="emailfrom.description">
+				<source>emailfrom</source>
+			</trans-unit>
+			<trans-unit id="namefrom.description">
+				<source>namefrom</source>
+			</trans-unit>
+			<trans-unit id="subject.description">
+				<source>subject</source>
+			</trans-unit>
+			<trans-unit id="replytoemail.description">
+				<source>replytoemail</source>
+			</trans-unit>
+			<trans-unit id="replytoname.description">
+				<source>replytoname</source>
+			</trans-unit>
+			<trans-unit id="newsid.description">
+				<source>newsid</source>
+			</trans-unit>
+			<trans-unit id="backpageid.description">
+				<source>backpageid</source>
+			</trans-unit>
+			<trans-unit id="unsubscribepageid.description">
+				<source>unsubscribepageid</source>
+			</trans-unit>
+			<trans-unit id="template.description">
+				<source>template</source>
+			</trans-unit>
+			<trans-unit id="prefixdefault.description">
+				<source>prefixdefault</source>
+			</trans-unit>
+			<trans-unit id="prefixen.description">
+				<source>prefixen</source>
+			</trans-unit>
+			<trans-unit id="prefixfr.description">
+				<source>prefixfr</source>
+			</trans-unit>
+			<trans-unit id="url.description">
+				<source>url</source>
+			</trans-unit>
+			<trans-unit id="selected.description">
+				<source>selected</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

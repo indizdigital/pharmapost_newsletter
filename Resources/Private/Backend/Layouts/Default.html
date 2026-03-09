@@ -1,0 +1,88 @@
+
+<f:be.container>
+	<f:be.pageRenderer includeRequireJsModules="{
+	 0:'TYPO3/CMS/PhiNewsletter/PhiNewsletter'
+	}" />
+	<div class="module">
+		<div class="module-docheader t3js-module-docheader">
+			<div class="module-docheader-bar module-docheader-bar-navigation t3js-module-docheader-bar t3js-module-docheader-bar-navigation row">
+				<div class="module-docheader-bar-column-left col-xs-12 text-right">
+					<f:be.pagePath />
+					<strong><f:be.pageInfo /></strong>
+				</div>
+			</div>
+			<div class="module-docheader-bar module-docheader-bar-buttons t3js-module-docheader-bar t3js-module-docheader-bar-buttons">
+				<div class="module-docheader-bar-column-left">
+					<div class="btn-toolbar">
+						<f:if condition="{processLinks}">
+							<f:then>
+								<f:if condition="{processLinks.abort}">
+									<f:then>
+										<f:link.action action="list" controller="Config" class="btn btn-default btn-sm" title="Index">
+											<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-view-go-back">
+												<span class="icon-markup">
+													<img src="/typo3conf/ext/phi_newsletter/Resources/Public/Icons/actions-close.svg" width="16" height="16"/>
+												</span>
+											</span>
+											<f:translate key="tx_phinewsletter_domain_model_config.abort" />
+										</f:link.action>
+									</f:then>
+								</f:if>
+								<f:if condition="{processLinks.proceed}">
+									<f:then>
+										<f:link.action action="{processLinks.proceed}" class="btn btn-default btn-sm t3js-editform-close proceedto" title="Index">
+											<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-view-go-back">
+												<span class="icon-markup">
+													<img src="/typo3conf/ext/phi_newsletter/Resources/Public/Icons/proceed.svg" width="16" height="16"/>
+												</span>
+											</span>
+											<f:translate key="tx_phinewsletter_domain_model_config.next" />
+										</f:link.action>
+									</f:then>
+								</f:if>
+							</f:then>
+							<f:else>
+										<f:link.action action="list" controller="Config" class="btn btn-default btn-sm {configlistmenuitem}" title="Senden">
+
+											<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-view-go-back">
+											<span class="icon-markup">
+												<img src="/typo3conf/ext/phi_newsletter/Resources/Public/Icons/email.svg" width="16" height="16"/>
+											</span>
+											</span>
+											Versenden
+										</f:link.action>
+									<f:link.action action="sentlist" controller="Emails" class="btn btn-default btn-sm  {emailssentlistmenuitem}" title="Versendete">
+										<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-view-go-back">
+											<span class="icon-markup">
+												<img src="/typo3conf/ext/phi_newsletter/Resources/Public/Icons/email-sent.svg" width="16" height="16"/>
+											</span>
+										</span>
+										Versendete Newsletter
+									</f:link.action>
+									<f:link.action action="list" controller="Stats" class="btn btn-default btn-sm  {statslistmenuitem}" title="Statistik">
+										<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-view-go-back">
+											<span class="icon-markup">
+												<img src="/typo3conf/ext/phi_newsletter/Resources/Public/Icons/actions-list.svg" width="16" height="16"/>
+											</span>
+										</span>
+										Klick & Openrate
+									</f:link.action>
+									<f:link.action action="loadcsv" controller="Import" class="btn btn-default btn-sm  {importloadcsvmenuitem}" title="Import">
+										<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-view-go-back">
+											<span class="icon-markup">
+												<img src="/typo3conf/ext/phi_newsletter/Resources/Public/Icons/actions-add.svg" width="16" height="16"/>
+											</span>
+										</span>
+										Import
+									</f:link.action>
+							</f:else>
+						</f:if>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="module-body t3js-module-body">
+				<f:render section="content" />
+		</div>
+	</div>
+</f:be.container>

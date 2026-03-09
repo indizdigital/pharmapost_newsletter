@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2016-01-11T20:51:53Z" product-name="phi_newsletter">
+		<header/>
+		<body>
+			<trans-unit id="newsids.description">
+				<source>newsids</source>
+			</trans-unit>
+			<trans-unit id="userid.description">
+				<source>userid</source>
+			</trans-unit>
+			<trans-unit id="senttime.description">
+				<source>senttime</source>
+			</trans-unit>
+			<trans-unit id="edition.description">
+				<source>edition</source>
+			</trans-unit>
+			<trans-unit id="config.description">
+				<source>config</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

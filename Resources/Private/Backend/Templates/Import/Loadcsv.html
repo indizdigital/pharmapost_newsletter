@@ -1,0 +1,98 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1><f:translate key="tx_phinewsletter_domain_model_import.import" /></h1>
+
+<f:flashMessages />
+  <div class="panel panel-space panel-default recordlist">
+  	<div class="panel-heading">
+      <a href="#">CSV Struktur (1. Zeile im .csv wird ignoriert, CSV Delimiter ist {settings.csvDelimiter})</a>
+    </div>
+    <div>
+      <div class="table-fit">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th></th>
+            <f:for each="{settings.indices}" key="fieldname" as="index">
+            <th>
+              <f:translate key="tx_phinewsletter_domain_model_user.{fieldname}" />
+              </th>
+            </f:for>
+              </tr>
+          </thead>
+          <tbody>
+              	<tr class="panel-space">
+                  <td>Spalte</td>
+                  <f:for each="{settings.indices}" key="fieldname" as="index">
+                    <td>
+                  	<f:if condition="{fieldname} == 'languageMapping'">
+                      	<f:then>
+                              <f:for each="{index}" key="langkey" as="languid">
+                                  {langkey}<br/>
+                              </f:for>
+                          </f:then>
+                          <f:else>
+                            <f:switch expression="{index}">
+                              <f:case value="1">A</f:case>
+                              <f:case value="2">B</f:case>
+                              <f:case value="3">C</f:case>
+                              <f:case value="4">D</f:case>
+                              <f:case value="5">E</f:case>
+                              <f:case value="6">F</f:case>
+                              <f:case value="7">G</f:case>
+                              <f:case value="8">H</f:case>
+                              <f:case value="9">I</f:case>
+                              <f:case value="10">J</f:case>
+                              <f:case value="11">K</f:case>
+                              <f:case value="12">L</f:case>
+                              <f:case value="13">M</f:case>
+                              <f:case value="14">N</f:case>
+                              <f:case value="15">O</f:case>
+                              <f:case value="16">P</f:case>
+                              <f:case value="17">Q</f:case>
+                              <f:case value="18">R</f:case>
+                              <f:case value="19">S</f:case>
+                              <f:case value="20">T</f:case>
+                              <f:case value="21">U</f:case>
+                              <f:case value="22">V</f:case>
+                              <f:case value="23">W</f:case>
+                              <f:case value="24">X</f:case>
+                              <f:case value="25">Y</f:case>
+                              <f:case value="26">Z</f:case>
+                            </f:switch>
+                          </f:else>
+                      </f:if>
+                      </td>
+                  </f:for>
+                  </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+ <f:form action="loadcsv" method="post" enctype="multipart/form-data">
+ <b><f:translate key="tx_phinewsletter_domain_model_import.selectusergroup" />:</b><br/>
+ <select name="tx_phinewsletter_web_phinewsletterphinewsletter[usergroup]">
+ <f:for each="{usergroups}" as="group">
+  <option value="{group.uid}">{group.title}</option>
+ </f:for>
+ </select>
+ <b><f:translate key="tx_phinewsletter_domain_model_import.selectimportfile" />:</b>
+ <f:form.upload name="file" /><br/><br/>
+ <f:form.submit name="submit" value="<f:translate key='tx_phinewsletter_domain_model_import.upload' />" /> </f:form>
+
+</f:section>

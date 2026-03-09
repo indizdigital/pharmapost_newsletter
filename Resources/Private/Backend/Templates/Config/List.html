@@ -1,0 +1,160 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true" xmlns:ex="TYPO3\CMS\Backend\ViewHelpers">
+<f:layout name="Default" />
+
+This template displays a EDIT form for the current domain object.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Edit.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1><f:translate key="tx_phinewsletter_domain_model_titel.maintitle" /></h1>
+
+<f:flashMessages />
+<f:render partial="FormErrors" />
+<div class="panel panel-space panel-default recordlist">
+	<div class="panel-heading">
+    <a href="#">Letzter Entwurf (Konfiguration)</a>
+  </div>
+  <div>
+    <div class="table-fit">
+      <table class="table table-striped table-hover">
+        <thead>
+          <th width="5%"></th>
+          <th><f:translate key="tx_phinewsletter_domain_model_config.subject" /></th>
+          <th width="120"><f:translate key="tx_phinewsletter_domain_model_config.template" /></th>
+          <th width="120"></th>
+        </thead>
+        <tbody>
+          <f:if condition="{draftConfigs}">
+            <f:then>
+            <f:for each="{draftConfigs}" as="exconfig">
+              <tr class="panel-space">
+
+                  <td class="col-icon nowrap">
+                    <img src="/typo3conf/ext/phi_newsletter/Resources/Public/Image/config_icon.svg" width="16" height="16"/>
+                  </td>
+                  <td>
+                    <f:link.action action="load" arguments="{config : exconfig}">
+                        {exconfig.subject0}<br/>
+                    </f:link.action>
+                  </td>
+                  <td style="padding:20px 0;">
+                    <f:image src="{imagePath}/newsletter-{exconfig.template}.jpg" width="100" />
+                  </td>
+                  <td>
+                    <f:form action="load" arguments="{config : exconfig.uid}" controller="Config" method="post">
+                    <f:form.textfield type="hidden" name="templateConfig" value="{exconfig.uid}" />
+                    <f:form.textfield type="hidden" name="dontDuplicate" value="1" />
+                    <f:form.submit value="<f:translate key='tx_phinewsletter_domain_model_config.chooseDraft' />" />
+                    </f:form>
+                  </td>
+                </tr>
+              </f:for>
+            </f:then>
+            <f:else>
+              <tr class="panel-space">
+
+                  <td class="col-icon nowrap">
+                    <img src="/typo3conf/ext/phi_newsletter/Resources/Public/Image/config_icon.svg" width="16" height="16"/>
+                  </td>
+                  <td colspan="3">
+                    <f:translate key='tx_phinewsletter_domain_model_config.nodrafts' />
+                  </td>
+                </tr>
+            </f:else>
+          </f:if>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="panel panel-space panel-default recordlist">
+	<div class="panel-heading">
+    <a href="#"><f:translate key="tx_phinewsletter_domain_model_titel.lastUsedConfig" /></a>
+  </div>
+  <div>
+    <div class="table-fit">
+      <table class="table table-striped table-hover">
+        <thead>
+          <th width="5%"></th>
+          <th><f:translate key="tx_phinewsletter_domain_model_config.subject" /></th>
+          <th width="120"><f:translate key="tx_phinewsletter_domain_model_config.template" /></th>
+          <th width="120"></th>
+        </thead>
+        <tbody>
+          <f:for each="{lastconfigs}" as="lastconfig">
+            <tr class="panel-space">
+
+                <td class="col-icon nowrap">
+                  <img src="/typo3conf/ext/phi_newsletter/Resources/Public/Image/config_icon.svg" width="16" height="16"/>
+                </td>
+                <td>
+                  <f:link.action action="load" arguments="{config : lastconfig}">
+                      {lastconfig.subject0}<br/>
+                  </f:link.action>
+                </td>
+                <td style="padding:20px 0;">
+                  <f:image src="{imagePath}/newsletter-{lastconfig.template}.jpg" width="100" />
+                  {lastconfig.template}
+                </td>
+                <td>
+                  <f:form action="load" arguments="{config : lastconfig.uid}" controller="Config" method="post">
+                  <f:form.textfield type="hidden" name="templateConfig" value="{lastconfig.uid}" />
+                  <f:form.submit value="<f:translate key='tx_phinewsletter_domain_model_config.chooseTemplate' />" />
+                  </f:form>
+                </td>
+              </tr>
+            </f:for>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="panel panel-space panel-default recordlist">
+	<div class="panel-heading">
+    <a href="#"><f:translate key="tx_phinewsletter_domain_model_titel.configPresets" /></a>
+  </div>
+  <div>
+    <div class="table-fit">
+      <table class="table table-striped table-hover">
+        <thead>
+          <th width="5%"></th>
+          <th><f:translate key="tx_phinewsletter_domain_model_config.subject" /></th>
+          <th width="120"><f:translate key="tx_phinewsletter_domain_model_config.template" /></th>
+          <th width="120"></th>
+        </thead>
+        <tbody>
+        	<f:for each="{configs}" as="exconfig">
+            	<tr class="panel-space">
+                  <td class="col-icon nowrap">
+                    <img src="/typo3conf/ext/phi_newsletter/Resources/Public/Image/config_icon.svg" width="16" height="16"/>
+                  </td>
+                  <td>
+                    <f:link.action action="load" arguments="{config : exconfig}">
+                        {exconfig.subject0}<br/>
+                    </f:link.action>
+                  </td>
+                  <td style="padding:20px 0;">
+                    <f:image src="{imagePath}/newsletter-{exconfig.template}.jpg" width="100" />
+                  </td>
+                  <td>
+                    <f:form action="load" arguments="{config : exconfig.uid}" controller="Config" method="post">
+                    <f:form.textfield type="hidden" name="templateConfig" value="{exconfig.uid}" />
+                    <f:form.submit value="<f:translate key='tx_phinewsletter_domain_model_config.chooseTemplate' />" />
+                    </f:form>
+                  </td>
+                </tr>
+        	</f:for>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</f:section>

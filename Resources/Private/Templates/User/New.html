@@ -1,0 +1,35 @@
+<f:layout name="Empty" />
+
+<f:section name="main">
+<div class="dashboardRow clearfix">
+	<div class="dashboardItem dashboardItem-newsletter dashboardItem-col4 bgWhite">
+		<div class="dashboardItem-col2">
+			<div class="dashboardNewsletterLogo">
+				<f:image src="fileadmin/templates/iamedis/img/logo.svg" />
+			</div>
+		</div>
+		<div class="dashboardItem-col4 bgLightgrey" style="padding:1% 2.5%">
+			<h2><f:translate key='tx_phinewsletter_domain_model_user.subscribtion_title' /></h2>
+			<div><f:translate key='tx_phinewsletter_domain_model_user.subscribtion_subtitle' /></div>
+			<f:form class="newsletter-subscribe" action="create" controller="User" enctype="multipart/form-data"  name="newUser" object="{newUser}">
+				<div class="input-field">
+					<label for="newsletter" class="hidden"><f:translate key='tx_phinewsletter_domain_model_user.email' /></label>
+					<f:form.textfield name="email" type="email" class="required bgWhite" placeholder="<f:translate key='tx_phinewsletter_domain_model_user.email' />"/>
+				</div>
+				<div class="input-field input-field-submit">
+					<div class="button-container save-button-container">
+						<f:form.hidden name="hash" value="{hash}"/>
+						<f:form.hidden name="csrf" value="{csrf}"/>
+						<f:form.hidden name="action" value="create"/>
+						<f:form.hidden name="controller" value="User"/>
+						<f:form.hidden name="extensionName" value="phi_newsletter"/>
+						<f:form.submit value="<f:translate key='tx_phinewsletter_domain_model_user.save' />" name="create"	 class="btn btnBlue"/>
+
+					</div>
+				</div>
+			</f:form>
+			<!--div class="icon iconAjaxLoading hidden">Loading</div-->
+		</div>
+	</div>
+</div>
+</f:section>

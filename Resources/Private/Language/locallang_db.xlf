@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2015-08-04T13:50:13Z" product-name="phi_newsletter">
+		<header/>
+		<body>
+			<trans-unit id="tx_phinewsletter_domain_model_newsletter.title">
+				<source>Newsletter</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_newsletter.description">
+				<source>Newsletter Plugin</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config">
+				<source>Newsletter Config</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.emailfrom">
+				<source>Emailfrom</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.namefrom">
+				<source>Namefrom</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.subject0">
+				<source>Betreff deutsch</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.subject1">
+				<source>Betreff französisch</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.subject2">
+				<source>Betreff italienisch</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.replytoemail">
+				<source>Replytoemail</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.replytoname">
+				<source>Replytoname</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.statuspageid">
+				<source>Statusseite (ID)</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.configuration">
+				<source>Configuration</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.prefix0">
+				<source>Leadtext deutsch</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.prefix1">
+				<source>Leadtext französisch</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.prefix2">
+				<source>Leadtext italienisch</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.url">
+				<source>Url</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.selected">
+				<source>Beispiel Konfiguration</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.filestorage">
+				<source>File storage path</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.image0">
+				<source>Header Bild deutsch</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.image1">
+				<source>Header Bild französisch</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.image2">
+				<source>Header Bild italienisch</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.tosendtime">
+				<source>Sendezeit</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.issent">
+				<source>Wurde versendet</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails">
+				<source>Emails</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.newsids">
+				<source>Newsids</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.userid">
+				<source>Userid</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.senttime">
+				<source>Senttime</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.edition">
+				<source>Edition</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.config">
+				<source>Config</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats">
+				<source>Stats</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.user">
+				<source>Userid</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.languageuid">
+				<source>Languageuid</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.newsid">
+				<source>Newsid</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.ip">
+				<source>Ip</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.edition">
+				<source>Edition</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.crdate">
+				<source>Datum</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

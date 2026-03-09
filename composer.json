@@ -1,0 +1,28 @@
+{
+    "name": "phi/phi-newsletter",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^11.5"
+    },
+    "extra": {
+      "typo3/cms": {
+         "extension-key": "phi_newsletter"
+      }
+    },
+    "autoload": {
+        "psr-4": {
+            "Phi\\PhiNewsletter\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phi\\PhiNewsletter\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "phi_newsletter": "self.version",
+        "typo3-ter/phi-newsletter": "self.version"
+    }
+}

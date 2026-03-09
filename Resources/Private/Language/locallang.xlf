@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2015-08-04T13:50:13Z" product-name="phi_newsletter">
+		<header/>
+		<body>
+
+			<!-- Titel -->
+
+			<trans-unit id="tx_phinewsletter_domain_model_titel.config">
+				<source>Gundkonfiguration</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.editconfig">
+				<source>Newsletter Konfiguration</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.maintitle">
+				<source>Newsletter Kampagnen</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.newconfig">
+				<source>Neue Gundkonfiguration</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.sending">
+				<source>Newsletter definieren und versenden</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.sent">
+				<source>Verschickte Newsletter</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.stats">
+				<source>Statistik</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.setDefaultConfig">
+				<source><![CDATA[Default Konfiguration setzen (durch Promacx)]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.info">
+				<source><![CDATA[Information]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.import">
+				<source><![CDATA[Import]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.configPresets">
+				<source><![CDATA[vordefinierte Konfigurationen (Templates)]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.lastUsedConfig">
+				<source><![CDATA[Zuletzt verwendete Konfigurationen (Templates)]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_titel.draftConfig">
+				<source><![CDATA[Entwurf Konfigurationen (Templates)]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.nodrafts">
+				<source><![CDATA[Es gibt keine offenen Kampagnen]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.editConfig">
+				<source>Config editieren</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.current">
+				<source>Aktuelle Newsletter Konfiguration</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.chooseTemplate">
+				<source>Vorlage wählen</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.chooseDraft">
+				<source>Entwurf wählen</source>
+			</trans-unit>
+
+			<!-- Gundkonfiguration -->
+
+			<trans-unit id="tx_phinewsletter_domain_model_config">
+				<source>Konfiguration</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.emailfrom">
+				<source>Absender E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.namefrom">
+				<source>Absender Name</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.subject">
+				<source>Betreff</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.replytoemail">
+				<source>Antwort E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.replytoname">
+				<source>Antwort Name</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.statuspageid">
+				<source>Statusseite (ID)</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.template">
+				<source>Vorlage</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.prefix0">
+				<source>Text vor den Newsbeiträgen (DE)</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.prefix1">
+				<source>Text vor den Newsbeiträgen (FR)</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.prefix2">
+				<source>Text vor den Newsbeiträgen (IT)</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.url">
+				<source>Website URL</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.selected">
+				<source>Beispiel Konfiguration</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.filestorage">
+				<source>Dateipfad</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.save">
+				<source>Speichern</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.newconfig">
+				<source>Grundkonfiguration erstellen</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.create">
+				<source>Erstellen</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.backtolist">
+				<source>Zurück zur Übersicht</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.create">
+				<source>Erstellen</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.saveAndContinue">
+				<source>Speichern und weiter</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.continue">
+				<source>Weiter zum Versand</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.image">
+				<source>Headerbild</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.configuration">
+				<source>Inhalt Konfiguration</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.tosendtime">
+				<source><![CDATA[Sendezeitpunkt (hh:mm dd.mm.YYYY)]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.abort">
+				<source>Abbrechen</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_config.next">
+				<source>Weiter</source>
+			</trans-unit>
+
+			<!-- Versenden -->
+
+			<trans-unit id="tx_phinewsletter_domain_model_emails">
+				<source>E-Mails</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.newsids">
+				<source>News ID's</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.user">
+				<source>Benutzer</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.senttime">
+				<source>Zeit</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.edition">
+				<source>Version</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.config">
+				<source>Konfiguration</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.emailerror">
+				<source><![CDATA[Email-Fehler!]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.numberofemails">
+				<source><![CDATA[Anzahl Empfänger]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.archive">
+				<source><![CDATA[Newsletter Archiv]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.tothearchive">
+				<source><![CDATA[Zum Archiv]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.archivetitle">
+				<source><![CDATA[Ausgabe vom ]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats">
+				<source>Statistik</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.user">
+				<source>Benutzer</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.languageuid">
+				<source>Sprach ID</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.newsid">
+				<source>News ID</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.newsname">
+				<source>News Name</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.ip">
+				<source>IP-Adresse</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.edition">
+				<source>Version</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.crdate">
+				<source>Datum</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.getcompletecsv">
+				<source><![CDATA[Download CSV (komplett)]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.getcsv">
+				<source>Download CSV</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.openingrate">
+				<source>Öffnungsrate</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.sentmails">
+				<source>Anzahl E-Mails</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_stats.itemclickrate">
+				<source><![CDATA[Totale Klicks]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_import.upload">
+				<source>Importieren</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_import.selectimportfile">
+				<source><![CDATA[Wählen Sie ihre .csv Datei für den Import]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_import.colSorting">
+				<source><![CDATA[CSV-Struktur]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_import.selectusergroup">
+				<source><![CDATA[Wählen Sie die zu füllende Benutzergruppe aus]]></source>
+			</trans-unit>
+
+			<!-- Anmeldung -->
+
+			<trans-unit id="tx_phinewsletter_domain_model_user.title">
+				<source>Anrede</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.mister">
+				<source>Herr</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.miss">
+				<source>Frau</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.firstname">
+				<source>Vorname</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.firstName">
+				<source>Vorname</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.lastname">
+				<source>Nachname</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.lastName">
+				<source>Nachname</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.address">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.zip">
+				<source>Plz</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.city">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.language">
+				<source>Sprache</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.languageMapping">
+				<source>Sprachen</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.idf">
+				<source>IDF</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.company">
+				<source>Firma</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.newsletter">
+				<source><![CDATA[Newsletter]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmTitle">
+				<source><![CDATA[Anmeldebestätigung]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.usersaved">
+				<source><![CDATA[Wir schicken Ihnen eine E-Mail damit Sie ihre Identität bestätigen können.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.userCouldNotBeSaved">
+				<source><![CDATA[Wir konnten Ihnen keine E-Mail senden. Bitte versuchen Sie es erneut.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.created">
+				<source><![CDATA[Newsletter Anmeldung]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.newslettersubscribe_text">
+				<source><![CDATA[Geben Sie hier bitte Ihre E-Mail-Adresse für den Newsletter ein: ]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.email">
+				<source><![CDATA[Ihre E-Mailadresse]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.save">
+				<source><![CDATA[Anmelden]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.preconfirmtext">
+				<source><![CDATA[Sie haben sich für den Newsletter angemeldet.<br/><br/>Bitte bestätigen Sie Ihre Identität mit untenstehendem Link.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.postconfirmtext">
+				<source><![CDATA[Vielen Dank.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmwelcome">
+				<source><![CDATA[Herzlichen Willkommen!]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmtext">
+				<source><![CDATA[Wir freuen uns, dass Sie sich zu unserem Newsletter angemeldet haben. Ab sofort erhalten Sie wöchentlich unseren Newsletter mit attraktiven Angeboten und Neuheiten sowie die wichtigsten Fakten aus der Industrie. Bitte bestätigen Sie Ihre Anmeldung zum Amedis Newsletter.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmlink">
+				<source><![CDATA[ANMELDUNG BESTÄTIGEN]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmSubject">
+				<source>Bestätigen Sie jetzt Ihre Amedis-Newsletter Anmeldung</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmgreets">
+				<source><![CDATA[Freundliche Grüsse<br/><br/>Ihre Amedis-UE AG]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.dearmiss">
+				<source>Sehr geehrte Frau</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.dearmister">
+				<source>Sehr geehrter Herr</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.dear">
+				<source>Guten Tag</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.select">
+				<source>[Num]</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_emails.group">
+				<source>Gruppe</source>
+			</trans-unit>
+
+
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmFailed">
+				<source><![CDATA[Dieser Link ist veraltet.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.activationSent">
+				<source><![CDATA[Sie haben eine E-Mail mit einem Aktivierungslink erhalten. Bitte kontrollieren Sie auch ihren Spam Ordner.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmActivation">
+				<source><![CDATA[Ihre E-Mail ist nun aktiviert.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.confirmActivationSubject">
+				<source><![CDATA[Wir haben Ihre E-Mailadresse in unseren Verteiler aufgenommen.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.unsubscribe">
+				<source><![CDATA[<span class="textBlue">Amedis</span> Newsletter-Abmeldung]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.unsubscribeText">
+				<source><![CDATA[Ihre E-Mail-Adresse wurde aus dem News-Verteiler entfernt.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.unsubscribeTextAll">
+				<source><![CDATA[Ihre E-Mail-Adresse wurde aus allen News-Verteilern entfernt.]]></source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_automatedtask.tasktitle">
+				<source>Automatisierter Newsletter</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.subscribtion_title">
+				<source>Immer auf dem neusten Stand sein?</source>
+			</trans-unit>
+			<trans-unit id="tx_phinewsletter_domain_model_user.subscribtion_subtitle">
+				<source>Für den Amedis-Newsletter anmelden.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
