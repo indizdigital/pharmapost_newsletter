@@ -71,13 +71,6 @@ defined('TYPO3') || die();
 
 })();
 
-// Add scheduler
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks'][\Phi\PhiNewsletter\Task\AutomatedTask::class] = array(
-        'extension' => $_EXTKEY,
-        'title' => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang.xlf:tx_phinewsletter_automatedtask.tasktitle',
-        'description' => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang.xlf:tx_phinewsletter_automatedtask.taskdescription',
-        'additionalFields' => \Phi\PhiNewsletter\Task\AutomatedTaskAdditionalFieldProvider::class
-);
 
 /*
 $GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['newsletter_unsubscribe'] = 'EXT:phi_newsletter/Resources/PMX/util/newsletter_unsubscribe.php';
@@ -85,10 +78,5 @@ $GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['phinewsletter_subscribe'] = 'E
 $GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['newsletter_tracker'] = 'EXT:phi_newsletter/Resources/PMX/util/newsletter_tracker.php';*/
 $GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['newsletter_openrate'] = 'EXT:phi_newsletter/Resources/PMX/util/newsletter_openrate.php';
 
-//TODO
-//if (\TYPO3\CMS\Core\Http\ApplicationType::fromRequest($request)->isBackend() )   {
-  // $pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
-  // $pageRenderer->loadRequireJsModule('TYPO3/CMS/PhiNewsletter/PhiNewsletter');
-//}
 
 ?>
